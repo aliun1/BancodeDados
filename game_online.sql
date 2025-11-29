@@ -20,7 +20,7 @@ CREATE TABLE tb_personagens(
     -- exemplo:  "classe_id = 1 -> Guerreiro"
     classe_id BIGINT, 
     PRIMARY KEY (id), -- define a coluna id como chave primaria
-    FOREIGN KEY (classe_id) REFERENCES tb_classes(id) --
+    FOREIGN KEY (classe_id) REFERENCES tb_classes(id) -- ligação entre as tabelas
 );
 
 INSERT INTO tb_classes (fase_do_jogo, tipo_classe) VALUES
